@@ -12,6 +12,8 @@
     --footer: #2F303A;
     --border-card:#EEEEEE;
     --card-set-gap: 30px;
+    --card-fon: #F5F4FA;
+    --link-color: #AFB1B8;
   }
   
   
@@ -175,14 +177,11 @@
 .svg-mail {
   margin-right: 10px;
 fill: currentColor;
-width: 16px;
-height: 12px;
 }
 .svg-tell {
   margin-right: 10px;
 fill: currentColor;
-/* width: 12px;
-height: 16px; */
+
 }
   
   /* герой */
@@ -248,6 +247,50 @@ height: 16px; */
     margin-right: 30px;
   }
   
+  .antena::before{
+    content: "";
+    height: 120px;
+    background-color: var(--card-fon);
+    display: block;
+    margin-bottom: 30px;
+    background-image: url(../images/icones/antenna.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .clock::before{
+    content: "";
+    height: 120px;
+    background-color: var(--card-fon);
+    display: block;
+    margin-bottom: 30px;
+    background-image: url(../images/icones/clock.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .diagram::before{
+    content: "";
+    height: 120px;
+    background-color: var(--card-fon);
+    display: block;
+    margin-bottom: 30px;
+    background-image: url(../images/icones/diagram.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  
+  .astronaut::before{
+    content: "";
+    height: 120px;
+    background-color: var(--card-fon);
+    display: block;
+    margin-bottom: 30px;
+    background-image: url(../images/icones/astronaut.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   
   .section-subtitle {
     font-weight: 700;
@@ -355,6 +398,31 @@ height: 16px; */
     line-height: 1.2;
     text-align: center;
   }
+
+  .team-link{
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+  }
+  .team-links{
+    display: flex;
+    fill: var(--link-color);
+    text-decoration: none;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.team-links:hover, 
+.team-links:focus {
+  fill: var(--wite-color);
+  background-color: var(--accent-color);
+}
+
+
+
+  
   
   
   /* нaвигация */
