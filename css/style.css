@@ -168,39 +168,14 @@
   }
 
  
-  .mail-header::before{
-    display: inline-flex;
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-background-image: url(../images/icones/envelope.svg);
-background-size: contain;  
-align-items: center;
-background-repeat: no-repeat;
-cursor: pointer;
-}
-.mail-header:hover,
-.mail-header:focus {
-    fill: var(--accent-color);
+  .mail-icon{
+display: inline-flex;
+width: 16px;
+height: 16px;
+margin-right: 10px;
+fill: #000000;
 }
 
-.tell-header::before{
-  display: inline-flex;
-    content: "";
-    width: 16px;
-    height: 16px;
-    margin-right: 10px;
-background-image: url(../images/icones/smartphone.svg);
-background-size: contain;  
-align-items: center;
-background-repeat: no-repeat;
-cursor: pointer;
-}
-.tell-header:hover,
-.tell-header:focus {
-    fill: var(--accent-color);
-}
   
   /* герой */
   .overlay{
